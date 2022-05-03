@@ -1,0 +1,46 @@
+{
+    "name": "movies-explorer-api",
+    "version": "1.0.0",
+    "description": "movies-api",
+    "main": "app.js",
+    "scripts": {
+        "deploy": "scp -r ../movies-explorer-api/* praktikum@51.250.18.100:/home/praktikum/react-mesto-api-full/",
+        "lint": "npx eslint .",
+        "lint_fix": "npx eslint . --fix",
+        "dev": "nodemon app.js",
+        "start": "node app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vitlyc/movies-explorer-api.git"
+    },
+    "author": "vitlyc",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/vitlyc/movies-explorer-api/issues"
+    },
+    "homepage": "https://github.com/vitlyc/movies-explorer-api#readme",
+    "devDependencies": {
+        "eslint": "^8.5.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-plugin-import": "^2.25.3",
+        "nodemon": "^2.0.15"
+    },
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.19.1",
+        "celebrate": "^15.0.0",
+        "cookie-parser": "^1.4.6",
+        "cors": "^2.8.5",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.2",
+        "express-rate-limit": "^5.5.1",
+        "express-winston": "^4.2.0",
+        "helmet": "^4.6.0",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^6.1.3",
+        "validator": "^13.7.0",
+        "winston": "^3.3.3"
+    }
+}
